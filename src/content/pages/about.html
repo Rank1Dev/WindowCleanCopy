@@ -1,0 +1,69 @@
+---
+title: 'About'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/Constructabout2.jpg'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/IpowerSide.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/IpowerSide.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/IpowerSide.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-1443">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/iConstructionCleanup.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/iConstructionCleanup.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/iConstructionCleanup.jpg" alt="volunteers" width="650" height="600" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">About Palma Cleaning</h2>
+                <p class="cs-text">
+                    At Palma Cleaning, we specialize in comprehensive exterior maintenance solutions, including power washing, gutter cleaning, window cleaning, and construction cleanup, ensuring your property shines inside and out."
+                </p>
+                <p class="cs-text">
+                    With a dedication to excellence and attention to detail, our team is committed to delivering superior results for all your exterior cleaning needs.
+                </p>
+                <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                        Our mission is to not just clean, but to rejuvenate spaces, leaving a lasting impact on properties and communities alike.
+                    </p>
+                    <span class="cs-name">Luciano Cassaro</span>
+                    <span class="cs-job">Founder</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                </div>
+                <a href="/projects" class="cs-button-solid">Our Projects</a>  
+        </div>
+    </div>
+</section>
+                                
+    {% include 'components/cta.html' %}
+
+{% endblock %}
